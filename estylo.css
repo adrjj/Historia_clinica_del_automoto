@@ -1,0 +1,233 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;0,900;1,400&family=Old+Standard+TT&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+body{
+  font-family: "montserrat", "sans-serif";
+  background-color: rgb(17, 31, 43);
+  color: rgb(244, 244, 245);
+}
+
+head, h1 {
+text-align: center;   
+font-weight:900;
+font-size: 3rem;
+color: rgb(244, 244, 245);
+padding: 1rem 0 3rem 0;
+}
+
+.tipo-de-auto ,.tipo-de-aceite {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 1rem;
+
+}
+.card-titulo{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 1.5rem;
+    border: 1px solid rgb(13, 248, 178);
+    background-color: rgb(7, 12, 17);;
+}
+
+.formulario{
+  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 3rem;
+    color: aliceblue;
+    
+}
+.formulario, h3{
+    text-align: center;
+    padding: 1rem;
+  
+
+}
+.botonGuardar{
+    background-color: rgb(12, 188, 201);
+    color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 900;
+    border-color: 1px solid rgba(255, 0, 0, 0);
+
+}
+input::placeholder{
+    color: aliceblue;
+    background-color: rgba(17, 31, 43, 0);
+
+  text-align: center;
+}
+input:focus, textarea:focus,select:focus {
+  outline: none;
+
+}
+input{
+    border: 1px solid #435a53;
+    background-color: rgb(7, 12, 17);
+    padding: 0.5rem;
+ 
+    border-radius: 0.5rem;
+    border-color: 1px solid rgb(255, 255, 255);
+    color: aliceblue;
+    font-weight: 600;
+}
+h2{
+    font-size: 2rem;
+    margin:3rem 0 3rem 0;
+    text-align: center;
+}
+.datosAceite{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border-radius: 1.5rem;
+  border: 1px solid rgb(13, 248, 178);
+  background-color: rgb(7, 12, 17);
+  width: 250px;
+  height: 550px;
+}
+.formAceite{
+outline: none;
+ 
+}
+.label{
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0 1rem 0;
+  
+}
+.filtros{
+  border: 1px solid #435a53;
+  border-radius: 1.5rem;
+
+}
+.TituloFiltro{
+  padding: 0.5rem;
+  
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  }
+  textarea{
+    background-color: rgb(7, 12, 17);
+  border: 1px solid #435a53;
+  border-radius: 0.5rem;
+  color:aliceblue;
+  text-align: justify;
+  padding: 0.5rem;
+}
+
+textarea::placeholder{
+  
+  background-color: rgba(17, 31, 43, 0);
+  color:aliceblue;
+text-align: center;
+font-family: "montserrat";
+}
+/*----------------------estilos tipo de auto---------------------*/
+.contAuto{
+  border-radius: 1.5rem;
+  border: 1px solid rgb(13, 248, 178);
+  background-color: rgb(7, 12, 17);
+padding: 1rem;
+margin-left: 1rem;
+}
+.contStrong{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pintoAuto{
+  color:rgb(13, 248, 178);
+  font-size: 1.5rem;
+  font-weight: 900;
+  
+}
+
+.btnBorrar{
+  width: 4rem;
+  background-color: rgb(201, 12, 84);
+  color: aliceblue;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  font-weight: 900;
+  border-color: 1px solid rgba(255, 0, 0, 0);
+  outline: 0;
+ border: 1px solid rgb(201, 12, 84);
+margin: 1rem;
+}
+
+strong{
+  font-weight: 300;
+  padding: 0.5rem;
+
+}
+.tituloAuto{
+margin-bottom: 1rem;
+color:rgb(13, 248, 178);
+padding: 0;
+letter-spacing: 2px;
+}
+
+/*--------------------------Manteinimiento Filtros-------------*/
+
+.contAceite{
+  border-radius: 1.5rem;
+  border: 1px solid rgb(13, 248, 178);
+  background-color: rgb(7, 12, 17);
+ padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 1rem 1rem;
+}
+
+.strongAceite{
+  display: flex;
+  flex-direction: column;
+}
+.fechaTipo{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.pintoAceite{
+  font-weight: 900;
+  color:rgb(13, 248, 178);
+}
+.filtroTipo{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.tituloAceite{
+  padding: 0.5rem;
+  color:aliceblue;
+}
+.cajaNota{
+  border:1px solid #435a53;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 10px;
+}
+.pintoNota{
+  color:rgb(13, 248, 178);
+}
+.cajaBoton{
+  display: flex;
+justify-content: center;
+}
