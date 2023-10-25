@@ -69,7 +69,7 @@ const showTasks = (tipoDeAuto) => {
     muestraTipoAuto.innerHTML = '';
 
     tipoDeAuto.forEach(tipo => {
-        
+
         div.innerHTML += `
         <div class="contAuto">
     
@@ -315,12 +315,12 @@ cargaTipoAceite.addEventListener('submit', (e) => {
     const aceiteNota = formAceite.get("nota");
 
 
-    
+
     const aceiteid = getRandomId()
 
-    
+
     const aceite = creandotipoDeAceite(aceiteid, aceiteFecha, aceiteTipo, aceiteFiltro, aceiteAire, aceiteNafta, aceiteHabitaculo, aceiteNota);
- 
+
     addAceite(aceite);
 
 });
