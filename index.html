@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estylo.css">
-    <title>Preentrega numero 3</title>
+    <link rel="stylesheet" href="./stylo/estylo.css">
+    <title>Entrega Final</title>
 </head>
 
 <body>
@@ -13,8 +13,22 @@
     <head>
         <h1>Historia clinica del automotor</h1>
     </head>
-
-
+    <div class="contBajada">
+        <div class="bajada">
+            <h2>Lleva un registro</h2>
+            <p>Con nuestra webapp, podes llevar un registro de todos los service que le realizas
+                al auto durante el tiempo que lo tengas...
+            </p>
+        </div>
+        <div class="nuevo">
+          <h2>Nueva sección</h2>
+        <a href="./pages/historia.html" class="botonGuardar"> Historia de las marcas </a>
+        <p>Visita nuestra base de datos y conoces cuales fueron los primeros auto, que se fabricaron en nuestro
+            pais.
+        </p>
+        </div>
+    </div>
+    <h2> MI Auto</h2>
     <section id="tdauto" class="tipo-de-auto">
         <div class="card-titulo">
             <h3> Datos del vehiculo</h3>
@@ -33,7 +47,7 @@
 colocamos un id para que js lo pinte en el doom y quede guardado en el localstorage-->
 
         <div class="card-auto1" id="muestraTipoAuto">
-        
+
 
         </div>
 
@@ -50,25 +64,25 @@ colocamos un id para que js lo pinte en el doom y quede guardado en el localstor
                 <input type="date" id="fechaAceite" name="fecha" required>
                 <input type="text" id="tipo" name="aceiteTipo" placeholder="tipo de aceite" required class="">
                 <div class="filtros">
-                <h3 class="TituloFiltro">Filtros</h3>
-                <div class="label">
-                    <label>
-                        <input type="checkbox" name="filtroAceite" value="Si"> Aceite
-                    </label>
+                    <h3 class="TituloFiltro">Filtros</h3>
+                    <div class="label">
+                        <label>
+                            <input type="checkbox" name="filtroAceite" value="Si"> Aceite
+                        </label>
 
-                    <label>
-                        <input type="checkbox" name="filtroAire" value="Si"> Aire
+                        <label>
+                            <input type="checkbox" name="filtroAire" value="Si"> Aire
+                        </label>
+                    </div>
                     </label>
+                    <div class="label">
+                        <label>
+                            <input type="checkbox" name="filtroNafta" value="SI"> Nafta
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filtroHabitaculo" value="Si"> Habitaculo
+                    </div>
                 </div>
-                </label>
-                <div class="label">
-                    <label>
-                        <input type="checkbox" name="filtroNafta" value="SI"> Nafta
-                    </label>
-                    <label>
-                        <input type="checkbox" name="filtroHabitaculo" value="Si"> Habitaculo
-                </div>
-            </div>
 
                 <textarea type="text" rows="5" cols="50" id="description" name="nota"
                     placeholder="Info a tener en cuenta" class=""></textarea>
@@ -82,9 +96,9 @@ colocamos un id para que js lo pinte en el doom y quede guardado en el localstor
     </section>
 
 
-
     <!-- <script src="/reduccion.js"></script> -->
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
+
     <!-- <script src="/service.js"></script> -->
 </body>
 
